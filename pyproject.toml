@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moca-oneway-cut"
+version = "0.1.0"
+description = "One-way MOCA treatment-effect estimator with cutting feedback."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "see LICENSE"}
+authors = [
+  {name = "MOCA contributors"}
+]
+dependencies = [
+  "numpy>=1.23",
+  "torch>=2.0",
+]
+
+[project.optional-dependencies]
+examples = [
+  "jupyter>=1.0",
+  "pandas>=1.5",
+  "scikit-learn>=1.0",
+]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: Other/Proprietary License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://github.com/LW-rock/moca-oneway-cut"
+Repository = "https://github.com/LW-rock/moca-oneway-cut"
+
+[tool.setuptools.packages.find]
+where = ["src"]
