@@ -22,8 +22,6 @@ pip install -e ".[examples]"
 
 Open `examples/example.ipynb` to run the same synthetic-data smoke test as `examples/basic_usage.py`.
 
-From GitHub after publishing:
-
 ```bash
 pip install git+https://github.com/LW-rock/moca-oneway-cut.git
 ```
